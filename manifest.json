@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+
+	"name": "HidePub",
+	"description": "Auto hide the Suggested Post from your timeline.",
+	"version": "1.0",
+
+	"permissions": [
+		"https://www.facebook.com/"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["*://www.facebook.com/*"],
+			"js": ["jquery-1.9.1.min.js", "hidepub.js"]
+		}
+	]
+}
